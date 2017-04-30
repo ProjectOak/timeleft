@@ -33,7 +33,6 @@ html {
 body {
   margin: 0;
   height: 100vh;
-  background-color: #f0f0f0;
 }
 
 .preload * {
@@ -101,11 +100,43 @@ COLORS
 }
 
 /************************************************************
+CONTENT
+*************************************************************/
+
+.view{
+  width: 100%;
+  background: url(http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content{
+  width: 40em;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+article{
+  padding: 0 50px 50px 50px;
+}
+
+article .name,
+article .age,
+article .life{
+/*  position: relative;
+  float: left;*/
+}
+
+/************************************************************
 NAVIGATION
 *************************************************************/
 
 .menu{
-  margin: 10px 0px 0px 10px;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
 }
 
 .menu .more{
@@ -137,7 +168,7 @@ NAVIGATION
 }
 
 .sub-menu ul{
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
   padding: 0;
   list-style: none;
 }
@@ -214,12 +245,6 @@ input[type=search]:focus {
 input::-webkit-search-decoration {
   display: none; 
 }
-
-
-/************************************************************
-CONTENT
-*************************************************************/
-
 
 
 /************************************************************
