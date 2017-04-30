@@ -290,10 +290,9 @@ MEDIA QUERY
 *************************************************************/
 
 
-/*@media screen and (min-device-width: 420px) {
-
+@media screen and (min-device-width: 420px) {
+  input[type=search] {
+    float: left;
+    padding: 20px 27px;
+  }
 }
-
-@media screen and (min-device-width: 768px) {
-
-}*/
