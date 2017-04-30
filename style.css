@@ -291,8 +291,15 @@ MEDIA QUERY
 
 
 @media screen and (min-device-width: 420px) {
+  article{
+    padding: 100px 10px 10px 30px;
+  }
   input[type=search] {
     float: left;
     padding: 20px 27px;
   }
+}
+
+@media screen and (min-device-width: 768px) {
+
 }
