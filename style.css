@@ -113,13 +113,13 @@ CONTENT
 }
 
 .content{
-  width: 40em;
+  max-width: 40em;
   padding: 10px;
   background-color: #f0f0f0;
 }
 
 article{
-  padding: 0 50px 50px 50px;
+  padding: 100px 30px 30px 30px;
 }
 
 article .name,
