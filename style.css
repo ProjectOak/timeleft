@@ -114,8 +114,6 @@ CONTENT
   -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed !important;
-  position: static !important;
-  z-index: -1 !important;
   -webkit-filter: grayscale(100%);
   filter: gray;
 }
@@ -311,7 +309,7 @@ MEDIA QUERY
     height: 70%;
   }
   input[type=search] {
-    padding: 21px 26.5px;
+    padding: 20.5px 26.5px;
   }
 }
 
