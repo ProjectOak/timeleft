@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
 /************************************************************
 BASE
@@ -48,10 +48,12 @@ TYPOGRAPHY
 *************************************************************/
 
 h1{
+  margin: 1.5em 0;
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 2.6em;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 p,
@@ -103,23 +105,27 @@ COLORS
 CONTENT
 *************************************************************/
 
-.view{
-  width: 100%;
+.hero-img{
+  height: 80%;
   background: url(http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
 }
 
-.content{
-  max-width: 40em;
-  padding: 10px;
+.view{
+  padding-bottom: 3em;
+  width: 100%;
   background-color: #f0f0f0;
 }
 
 article{
-  padding: 100px 30px 30px 30px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  max-width: 40em;
 }
 
 article .name,
@@ -129,14 +135,18 @@ article .life{
   float: left;*/
 }
 
+.title{
+  text-align: center;
+}
 /************************************************************
 NAVIGATION
 *************************************************************/
 
 .menu{
-  margin: 0 auto;
+  margin: 10px auto auto 10px;
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 
 .menu .more{
@@ -173,6 +183,10 @@ NAVIGATION
   list-style: none;
 }
 
+.sub-menu ul a:nth-child(1) li{
+  border-top: 1px solid black;
+}
+
 .sub-menu ul li{
   width: 300.5px;
   padding: 20px 16.5px;
@@ -183,10 +197,6 @@ NAVIGATION
   background-color: #e6e6e6;
   cursor: pointer;
   transition: background-color 120ms ease-in;
-}
-
-.sub-menu ul li:nth-child(1){
-  border-top: 1px solid black;
 }
 
 .sub-menu ul li:hover{
@@ -264,8 +274,7 @@ GRID SYSTEM
 
 [class*="col-"] {
   position: relative;
-  float: left;
-  padding: 5px;
+  float: right;
 }
 
 .col-1{
@@ -290,16 +299,11 @@ MEDIA QUERY
 *************************************************************/
 
 
-@media screen and (min-device-width: 420px) {
-  article{
-    padding: 100px 10px 10px 30px;
-  }
-  input[type=search] {
-    float: left;
-    padding: 20px 27px;
+@media screen and (max-width: 420px) {
+  .hero-img{
+    height: 70%;
   }
 }
 
-@media screen and (min-device-width: 768px) {
-
+@media screen and (max-width: 1024px) {
 }
